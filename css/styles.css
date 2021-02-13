@@ -32,16 +32,17 @@ html, body{
 
 /* col-4 */
 .container-fluid{
+  position:relative;
   height:75vh;
 }
 .col-4, .col-8{
 height: 75vh;
 margin:0;
 padding: 0;
-}
-
-.container-fluid {
-  position: relative;
+  border-top-style: dotted;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted;
 }
 
 .image-col-4 {
