@@ -15,67 +15,6 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Hello, world!</title>
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-
-    .container-fluid {
-      width: 100%;
-      height: 100vh;
-      position: relative;
-    }
-
-    .col {
-      display: inline;
-      float: left;
-      width: 33.33%;
-      height: 50vh;
-      background-color: red;
-      position: relative;
-      text-align: center;
-      z-index: 0;
-      overflow: hidden;
-    }
-
-    .button {
-      padding: 20px 0;
-      width: 100%;
-      background-color: purple;
-      color: #ffffff;
-      text-decoration: none;
-      text-align: center;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-    }
-
-    .button:hover {
-      background-color: orange;
-    }
-    .col-1:hover {
-      background-image:url(/img/AdrianProfile.png);
-    }
-
-    .col-2:hover {
-      background-color: blue;
-    }
-
-    .col-3:hover {
-      background-color: green;
-    }
-    .vertical-align {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-    }
-  </style>
-
   <body>
     <div class="full-screen-video-container">
       <video id="vid1" autoplay loop muted preload="auto">
@@ -83,24 +22,47 @@
       </video>
       <div class="full-screen-video-content">Aztlan Ink</div>
     </div>
-    <div class="container-fluid"><a>
-      <div class="col col-1">
-        <div class="vertical-align">
-          <h1 class="hero-text">adrian</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <img src="img/Ace.png" class="image-col-4" alt="Ace" style="width: 100%" />
+          <div class="middle">
+            <div class="text">Ace</div>
+          </div>
         </div>
-      </div>
-      <div class="col col-2">
-        <div class="vertical-align">
-          <h1 class="hero-text">choose your artist ></h1>
-        </div>
-      </div>
-      <div class="col col-3">
-        <div class="vertical-align">
-          <h1 class="hero-text">ace</h1>
+        <div id="myCarousel" class="col-8 carousel fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." alt="First Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/AdrianProfile.png" alt="Second Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/faceAce.png" alt="Third Slide" />
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
       </div>
     </div>
-
+    <script>
+      $(document).ready(function () {
+        $('#myCarousel').carousel();
+      });
+    </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

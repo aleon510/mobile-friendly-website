@@ -1,6 +1,7 @@
 html, body{
   margin:0;
 }
+ /* video css */
 .full-screen-video-container{
   position: relative;
   height: 100vh;
@@ -29,38 +30,54 @@ html, body{
   margin-top: 100px;
 }
 
+/* col-4 */
 .container-fluid{
+  height:75vh;
+}
+.col-4, .col-8{
+height: 75vh;
+margin:0;
+padding: 0;
+}
+
+.container-fluid {
   position: relative;
-  width: 50%;
 }
-.image{
-  display: block;
-  width:100%;
-  height:auto;
-}
-.overlay{
-  position:absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fff;
-}
-container-fluid:hover .overlay{
+
+.image-col-4 {
   opacity: 1;
+  display: block;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-.text{
-  color:white;
-  font-size: 20px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.col-4:hover .image-col-4 {
+  opacity: 0.3;
+}
+
+.col-4:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* col-8 carousel */
