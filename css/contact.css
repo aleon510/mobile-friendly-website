@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #fafafa;
   font-family: 'Roboto', sans-serif;
-  background-image: url('/img/star.jpg');
+  background-image: url('/img/start.jpg');
   font-weight: bold;
   font-size: 18px;
 }
@@ -55,4 +55,22 @@ input[type='submit']:hover {
 }
 .lineicon {
   color: white;
+}
+.footer {
+  height: 95px;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }

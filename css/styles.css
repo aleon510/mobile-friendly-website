@@ -40,18 +40,7 @@ body {
   visibility: visible;
   height: 100%;
 }
-#carouselExampleIndicators {
-  height: 1000px;
-  width: 1000px;
-}
-.image-area {
-  height: 100%;
-  width: 100%;
-}
-.img-text {
-  height: 100%;
-  width: 100%;
-}
+
 /*-----------video css------------------*/
 .full-screen-video-container {
   position: relative;
@@ -95,24 +84,18 @@ body {
 
 /*-------Artist Selector-----------*/
 
-.artist-banner-thumbnail {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-}
-
 .artist-banner-thumbnail:hover {
   opacity: 0.6;
   z-index: 1;
 }
+.col-md-4 .col-sm-4{
 
-/* col-8 carousel */
+}
 .home-button {
   z-index: 1;
+
 }
+
 .bg-img1 {
   position: relative;
   z-index: 0;
@@ -126,14 +109,7 @@ body {
   font-weight: 80px;
   z-index: 1;
 }
-#about {
-  height: 60vh;
-  width: 100vw;
-}
-.lead {
-  display: flex;
-  text-align: center;
-}
+
 .card {
   width: 1000px;
   border: hidden;
@@ -217,6 +193,10 @@ body {
 }
 #stars {
   color: gold;
+}
+.footer {
+  height: 95px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

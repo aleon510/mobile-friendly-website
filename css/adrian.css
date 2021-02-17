@@ -1,20 +1,25 @@
 body {
-  background-image: url('/img/star.jpg');
+  background-image: url('/img/start.jpg');
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 /*-----------NAVIGATION-------------*/
 .navbar {
   transition: all 0.4s;
 }
-
-.navbar .nav-item .nav-link {
-  color: #fafafa;
+.a .navlink {
+  color: gold;
 }
-
 .logo {
   height: 250px;
   width: 250px;
 }
-
+.navbar.shift ul li a {
+  position: relative;
+  z-index: 1;
+  color: black;
+}
 .navbar.shift ul li a:after {
   display: block;
   position: absolute;
@@ -27,7 +32,7 @@ body {
   height: 1px;
   content: '.';
   color: transparent;
-  background: gold;
+  background: rgba(78, 77, 77, 0.856);
   visibility: none;
   opacity: 0;
   z-index: -1;
