@@ -10,32 +10,40 @@
     <link rel="stylesheet" href="/css/adrian.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg shift fixed-top">
-        <div class="container-fluid px-5"><a href="index.html" class="navbar navbar-brand font-weight-bold">
-          <img src="img/logo/FiveTen (1).png" alt="logo" styles="width: 250px; height: 250px;"
-          class="logo">
-        </a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home<span class="sr-only"></span></a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                      
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artists</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </div>
-              </li>
-               <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
-               <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg shift fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+    <img src="/img/logo/FiveTen (1).png" alt="logo" class="logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end px-5" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Artists
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="ace.html">Chicano Ace</a>
+        <a class="dropdown-item" href="adrian.html">Adrian Lazaro</a>
+      </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  </nav>
     <div class="jumbotron bg-img pb-5">
       <div class="container ">
         <img src="/img/banner/Adrian_Banner.jpg" style="width: 100%; height: 100%;">
@@ -100,10 +108,16 @@
       </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <footer>
-      <div class="footer">
-        
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
       </div>
     </footer>
   </body>
