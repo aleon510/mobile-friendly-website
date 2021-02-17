@@ -9,10 +9,6 @@ body {
   transition: all 0.4s;
 }
 
-.navbar .nav-link {
-  color: #fafafa;
-}
-
 .logo {
   height: 250px;
   width: 250px;
@@ -33,7 +29,7 @@ body {
   height: 1px;
   content: '.';
   color: transparent;
-  background: rgb(180, 154, 4);
+  background: rgba(78, 77, 77, 0.856);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -44,7 +40,18 @@ body {
   visibility: visible;
   height: 100%;
 }
-
+#carouselExampleIndicators {
+  height: 1000px;
+  width: 1000px;
+}
+.image-area {
+  height: 100%;
+  width: 100%;
+}
+.img-text {
+  height: 100%;
+  width: 100%;
+}
 /*-----------video css------------------*/
 .full-screen-video-container {
   position: relative;
@@ -133,6 +140,7 @@ body {
   background-color: transparent;
   font-family: inherit;
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .bg-img2 {
   background-image: url('/img/banner/artist-tattoo-creative-tattooist.jpg');
@@ -140,7 +148,76 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-/*------------Banner-----------*/
+/*------------Carousel-----------*/
+#demo {
+  background: linear-gradient(112deg, #fafafa 50%, antiquewhite 50%);
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 3rem 2rem;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+.carousel-caption img {
+  width: 10vh;
+  border-radius: 10vh;
+  margin-top: 1rem;
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: all 0.4;
+  opacity: unset;
+}
+#stars {
+  color: gold;
+}
 
 @media only screen and (max-width: 600px) {
 }
