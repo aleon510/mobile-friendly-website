@@ -1,3 +1,77 @@
 body {
-  background-color: blue;
+  margin: 0;
+  padding: 0%;
+  background-color: red;
 }
+.logo {
+  height: 250px;
+  width: 250px;
+}
+.ace_banner {
+  height: inherit;
+  width: 100%;
+}
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fafafa;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+}
+
+.navbar.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: gold;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.navbar.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/*------------Banner-----------*/
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 90px;
+  text-shadow: gray;
+}
+.footer {
+  height: 95px;
+  width: 100%;
+}
+
+.lineicon {
+  color: white;
+}
+
+.carousel .item {
+  height: 300px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+

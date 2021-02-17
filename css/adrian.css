@@ -1,12 +1,12 @@
 body {
-  background: black;
+  background-image: url('/img/star.jpg');
 }
 /*-----------NAVIGATION-------------*/
 .navbar {
   transition: all 0.4s;
 }
 
-.navbar .nav-link {
+.navbar .nav-item .nav-link {
   color: #fafafa;
 }
 
@@ -14,20 +14,7 @@ body {
   height: 250px;
   width: 250px;
 }
-@media (max-width: 991.98px) {
-  .navbar {
-    background: #fafafa;
-  }
 
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #555;
-  }
-}
-.navbar.shift ul li a {
-  position: relative;
-  z-index: 1;
-}
 .navbar.shift ul li a:after {
   display: block;
   position: absolute;
@@ -40,7 +27,7 @@ body {
   height: 1px;
   content: '.';
   color: transparent;
-  background: brown;
+  background: gold;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -52,17 +39,18 @@ body {
   height: 100%;
 }
 /*------------Banner-----------*/
-.jumbotron {
-  margin-top: 260px;
-  position: relative;
-  display: flex;
-  height: 650px;
-  width: 100%;
-}
-.banner_container {
-  background-repeat: no-repeat;
-  background-size: cover;
+h1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-weight: bolder;
+  font-size: 90px;
+  text-shadow: gray;
+}
+.footer {
+  height: 95px;
+  width: 100%;
+}
+
+.lineicon {
+  color: white;
 }
