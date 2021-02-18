@@ -84,17 +84,20 @@ body {
 
 /*-------Artist Selector-----------*/
 
+#a_button{
+position:absolute;
+z-index: 10;
+}
+button{
+  background:none;
+  border: none;
+  text-decoration: none;
+}
 .artist-banner-thumbnail:hover {
   opacity: 0.6;
-  z-index: 1;
+  z-index: 2;
 }
-.col-md-4 .col-sm-4{
 
-}
-.home-button {
-  z-index: 1;
-
-}
 
 .bg-img1 {
   position: relative;
@@ -194,10 +197,12 @@ body {
 #stars {
   color: gold;
 }
+
 .footer {
   height: 95px;
   width: 100%;
 }
+
 
 @media only screen and (max-width: 600px) {
 }
