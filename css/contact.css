@@ -51,6 +51,7 @@ input[type='submit']:hover {
   text-align: center;
   background-color: slategray;
   opacity: 0.85;
+  bottom: 100px;
 }
 #form {
   position: relative;
@@ -59,13 +60,15 @@ input[type='submit']:hover {
   color: white;
 }
 .footer {
+  position: fixed;
   height: 95px;
   width: 100%;
 }
 .map {
+  position: relative;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  bottom: 100px;
 }
 
 @media only screen and (max-width: 600px) {
