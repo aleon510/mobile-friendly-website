@@ -15,7 +15,9 @@ body {
 .navbar {
   position: relative;
 }
-
+.navbar .nav-item .nav-link {
+  color: #fafafa;
+}
 input [type='text'],
 select,
 textarea {
