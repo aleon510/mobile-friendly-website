@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #fafafa;
   font-family: 'Roboto', sans-serif;
-  background-image: url('/img/start.jpg');
+  background-image: url('../img/start.jpg');
   font-weight: bold;
   font-size: 18px;
 }
