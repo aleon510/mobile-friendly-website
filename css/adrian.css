@@ -1,7 +1,7 @@
 body {
-  background-image: url('../img/start.jpg');
   margin: 0;
   padding: 0;
+  background-image: url('../img/start.jpg');
   font-family: 'Roboto', sans-serif;
 }
 /*-----------NAVIGATION-------------*/
