@@ -1,6 +1,7 @@
 # About The Project
+This project was used to learn bootstrap commands
 
-##Prequisites
+## Prequisites
 html
 css
 bootstrap
