@@ -19,3 +19,10 @@ Distributed by No1 License
 Alex Leon @aleon510 - alejandroleon5434@gmail.com
 
 ## Acknowledgements
+Line Icons
+Google Fonts
+Pixlr
+Photopea
+Grey Theory Studio
+@adrianlazaro - instagram
+@chicanoace - instagram
